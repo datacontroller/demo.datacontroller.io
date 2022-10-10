@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Data Controller</title>
+    <!-- <base href="/"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="styles.060f143670836c7b.css"></head>
+
+  <!--
+    ## SASJS Adapter config details ##
+
+    * appLoc: The location in metadata or SAS drive where DC will be deployed
+    * serverType: either SAS9, SASVIYA or SASJS
+    * loginMechanism: Use 'Default' for regular (user/pass) logins, or 'Redirected' for 2FA/SSO
+    * debug: Whether to enable debug on startup
+
+    ## Viya only settings ##
+    * adminGroup: This group will have unrestricted access (Viya Only)
+    * dcPath: The physical location in which to deploy the staging area (Viya only)
+    * useComputeApi: Connection method (Viya only)
+    * contextName: Compute Context (Viya only)
+
+  -->
+
+  <body class="m-0">
+    <my-app serverurl="https://sas.4gl.io:5006" apploc="/Public/app/dc" servertype="SASJS" loginmechanism="Default" debug="false" usecomputeapi="true" contextname="SAS Job Execution compute context" admingroup="sec-sas9-prd-int-sasplatform-300114sasjs" dcpath="/tmp/dc" hotlicencekey="non-commercial-and-evaluation"></my-app>
+  <script src="runtime.61e771b472ecb588.js" type="module"></script><script src="scripts.b81387d1a259d626.js" defer></script><script src="main.db3e379dd0dede52.js" type="module"></script></body>
+</html>
